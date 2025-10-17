@@ -119,7 +119,7 @@ async function fetchProductos() {
 
 // Lógica de navegación
 let paginaActual = 'contenido'; 
-if (window.location.pathname.includes('index.html') || window.location.pathname === '/') {
+if (window.location.pathname.includes('index.html') || window.location.pathname.endsWith('/')) {
     paginaActual = 'inicio';
 } else if (window.location.pathname.includes('todo.html')) {
     paginaActual = 'todos';
@@ -137,7 +137,7 @@ function renderizar(arr) {
     let pathPrefix = window.location.pathname.includes('/pages/') ? '../' : './';
     
     let productosAmostrar = [];
-    const esInicio = window.location.pathname.includes("index.html") || window.location.pathname === "/";
+    const esInicio = window.location.pathname.includes("index.html") || window.location.pathname.endsWith("/");
 
     if (esInicio) {
         const idsElegidos = [1, 2, 8, 7, 6, 14];
