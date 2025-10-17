@@ -20,6 +20,42 @@
   gap: 1rem;
 }
 
+.d-flex.align-items-center {
+
+    gap: 1rem; 
+}
+header .navbar .container-fluid {      
+  display: flex;                   
+  justify-content: flex-end; 
+  gap: 2rem;   
+}
+
+.btn-carrito-custom {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: #000; 
+    font-size: 1rem; 
+    font-weight: 500;
+    display: flex; 
+    align-items: center;
+    line-height: 1; 
+
+}
+
+
+.btn-carrito-custom span {
+    font-weight: 600; 
+    margin: 0 0.15rem; 
+}
+
+.navbar-toggler {
+    padding: 0; 
+    margin: 0; 
+}
+
+
 .navbar-nav {
   gap: 1rem;
   padding-left: 1rem;

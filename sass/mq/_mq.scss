@@ -35,12 +35,12 @@
   }
 
   .quienes_somos {
-  max-width: 900px; // ajustalo según el ancho que quieras
-  margin: 0 auto;   // centra el bloque horizontalmente
-  padding: 2rem;    // espacio interno lateral (mobile o pantallas grandes)
+  max-width: 900px; 
+  margin: 0 auto;   
+  padding: 2rem;    
   
   h2, p {
-    text-align: justify; // asegurás que se mantenga alineado a la izquierda
+    text-align: justify; 
   }
 }
 
@@ -86,5 +86,33 @@
 .card-ropa-index {
   flex: 0 0 21%;
 } 
-  
+
+}
+
+@media (max-width: 992px) {
+    #contenedor-productos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    .card-ropa {
+        width: auto; 
+        min-height: auto;
+    }
+    
+}
+
+@media (max-width: 768px) {
+  #contenedor-productos {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+  }
+  .card-ropa {
+      width: auto; 
+  }
+}
+
+@media (max-width: 576px) {
+  #contenedor-productos {
+    grid-template-columns: repeat(2, 1fr); 
+}
 }

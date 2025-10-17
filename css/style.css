@@ -40,6 +40,13 @@ body {
   background-color: rgb(230, 226, 215);
 }
 
+#contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas para escritorio (base) */
+  gap: 20px;
+  padding: 10px;
+}
+
 /* Header */
 .index-header {
   background-color: rgb(230, 226, 215);
@@ -58,6 +65,39 @@ body {
 
 .index-header-flex {
   gap: 1rem;
+}
+
+.d-flex.align-items-center {
+  gap: 1rem;
+}
+
+header .navbar .container-fluid {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.btn-carrito-custom {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.btn-carrito-custom span {
+  font-weight: 600;
+  margin: 0 0.15rem;
+}
+
+.navbar-toggler {
+  padding: 0;
+  margin: 0;
 }
 
 .navbar-nav {
@@ -263,7 +303,6 @@ main {
 }
 
 .contenedor-Cards-index {
-  display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
   gap: 1rem;
@@ -465,6 +504,9 @@ footer {
   .contenedor-Cards {
     justify-content: center;
   }
+  .contenedor-Cards-index {
+    display: flex;
+  }
   .card-ropa {
     width: 18rem;
     min-height: 500px;
@@ -515,6 +557,30 @@ footer {
   }
   .card-ropa-index {
     flex: 0 0 21%;
+  }
+}
+@media (max-width: 992px) {
+  #contenedor-productos {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  .card-ropa {
+    width: auto;
+    min-height: auto;
+  }
+}
+@media (max-width: 768px) {
+  #contenedor-productos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .card-ropa {
+    width: auto;
+  }
+}
+@media (max-width: 576px) {
+  #contenedor-productos {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

@@ -28,6 +28,13 @@ body {
   background-color: $color-beige;
 }
 
+#contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas para escritorio (base) */
+    gap: 20px;
+    padding: 10px;
+}
+
 
 
 
