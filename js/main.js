@@ -137,9 +137,8 @@ function renderizar(arr) {
     let pathPrefix = window.location.pathname.includes('/pages/') ? '../' : './';
     
     let productosAmostrar = [];
-    const esInicio = window.location.pathname.includes("index.html") || window.location.pathname.endsWith("/");
 
-    if (esInicio) {
+    if (paginaActual === 'inicio') {
         const idsElegidos = [1, 2, 8, 7, 6, 14];
         productosAmostrar = arr.filter(p => idsElegidos.includes(p.id));
 
