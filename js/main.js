@@ -129,11 +129,13 @@ if (window.location.pathname.includes('index.html') || window.location.pathname 
     paginaActual = 'indumentaria';
 }
 
-// Renderizado de Productos (Scroll Snap/Grilla)
 function renderizar(arr) {
     if (paginaActual === 'contenido') {
         return;
     }
+  
+    let pathPrefix = window.location.pathname.includes('/pages/') ? '../' : './';
+    
     let productosAmostrar = [];
     const esInicio = window.location.pathname.includes("index.html") || window.location.pathname === "/";
 
@@ -151,7 +153,7 @@ function renderizar(arr) {
                 card.classList.add('card-ropa-index');
                 
                 card.innerHTML = `
-                    <img src="${item.img}" alt="${item.nombre}">
+                    <img src="${pathPrefix}${item.img}" alt="${item.nombre}"> 
                     <h3>${item.nombre}</h3>
                     <section class="card-ropa-precio-index">
                         <span>$${item.precio.toLocaleString('es-AR')}</span>
@@ -187,7 +189,7 @@ function renderizar(arr) {
             card.classList.add('card-ropa');
             
             card.innerHTML = `
-                <img src="${item.img}" alt="${item.nombre}">
+                <img src="${pathPrefix}${item.img}" alt="${item.nombre}"> 
                 <h3>${item.nombre}</h3>
                 <section class="card-ropa-precio">
                     <span>$${item.precio.toLocaleString('es-AR')}</span>
@@ -241,7 +243,7 @@ function addCarrito(id) {
 
 // Actualizar Header y Totales
 function actualizarTotal() {
-    // Usamos reduce con arrow function para ser más modernos
+
     let total = carrito.reduce((acumulador, producto) => acumulador + producto.precio, 0);
     
     const cantidadElement = document.getElementById('cantidad-carrito');
@@ -255,7 +257,8 @@ function actualizarTotal() {
         totalElement.textContent = '$' + total.toLocaleString('es-AR');
     }
 
-    // Dejamos un log útil
+   
+    
     console.log("Total actualizado: $" + total.toLocaleString('es-AR')); 
 }
 

@@ -5,7 +5,7 @@
         "categoria": "Indumentaria",
         "precio": 94300,
         "stock": 12,
-        "img": "../imgs/blusa shine.jpeg"
+        "img": "imgs/blusa shine.jpeg"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "categoria": "Indumentaria",
         "precio": 94300,
         "stock": 8,
-        "img": "../imgs/abrigo print.jpeg"
+        "img": "imgs/abrigo print.jpeg"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "categoria": "Accesorios",
         "precio": 4500,
         "stock": 25,
-        "img": "../imgs/accesorios-charm/corbatero-cubic.jpeg"
+        "img": "imgs/accesorios-charm/corbatero-cubic.jpeg"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "categoria": "Indumentaria",
         "precio": 94300,
         "stock": 10,
-        "img": "../imgs/blusa lentejuelas verde.jpeg"
+        "img": "imgs/blusa lentejuelas verde.jpeg"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "categoria": "Accesorios",
         "precio": 5500,
         "stock": 18,
-        "img": "../imgs/accesorios-charm/corbatero-stellar.jpeg"
+        "img": "imgs/accesorios-charm/corbatero-stellar.jpeg"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "categoria": "Indumentaria",
         "precio": 94300,
         "stock": 7,
-        "img": "../imgs/body brilloso bordo.jpeg"
+        "img": "imgs/body brilloso bordo.jpeg"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "categoria": "Indumentaria",
         "precio": 94300,
         "stock": 5,
-        "img": "../imgs/camisaco peluche pri.jpeg"
+        "img": "imgs/camisaco peluche pri.jpeg"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "categoria": "Indumentaria",
         "precio": 94300,
         "stock": 15,
-        "img": "../imgs/campera cuero comun.jpeg"
+        "img": "imgs/campera cuero comun.jpeg"
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "categoria": "Indumentaria",
         "precio": 94300,
         "stock": 6,
-        "img": "../imgs/campera cuero tachas.jpeg"
+        "img": "imgs/campera cuero tachas.jpeg"
     },
     {
         "id": 10,
@@ -77,7 +77,7 @@
         "categoria": "Accesorios",
         "precio": 5500,
         "stock": 20,
-        "img": "../imgs/accesorios-charm/corbatero-corazones.jpeg"
+        "img": "imgs/accesorios-charm/corbatero-corazones.jpeg"
     },
     {
         "id": 11,
@@ -85,7 +85,7 @@
         "categoria": "Indumentaria",
         "precio": 94300,
         "stock": 9,
-        "img": "../imgs/campera gabardina bordo.jpeg"
+        "img": "imgs/campera gabardina bordo.jpeg"
     },
     {
         "id": 12,
@@ -93,7 +93,7 @@
         "categoria": "Indumentaria",
         "precio": 94300,
         "stock": 11,
-        "img": "../imgs/chaleco basico.jpeg"
+        "img": "imgs/chaleco basico.jpeg"
     },
     {
         "id": 13,
@@ -101,7 +101,7 @@
         "categoria": "Accesorios",
         "precio": 2500,
         "stock": 30,
-        "img": "../imgs/accesorios-charm/pulseras-dije.jpeg"
+        "img": "imgs/accesorios-charm/pulseras-dije.jpeg"
     },
     {
         "id": 14,
@@ -109,7 +109,7 @@
         "categoria": "Indumentaria",
         "precio": 94300,
         "stock": 4,
-        "img": "../imgs/pantalon animal print algodon.jpeg"
+        "img": "imgs/pantalon animal print algodon.jpeg"
     },
     {
         "id": 15,
@@ -117,7 +117,7 @@
         "categoria": "Accesorios",
         "precio": 4000,
         "stock": 22,
-        "img": "../imgs/accesorios-charm/corbatero-crom.jpeg"
+        "img": "imgs/accesorios-charm/corbatero-crom.jpeg"
     },
     {
         "id": 16,
@@ -125,7 +125,7 @@
         "categoria": "Indumentaria",
         "precio": 94300,
         "stock": 7,
-        "img": "../imgs/saco paño ddl.jpeg"
+        "img": "imgs/saco paño ddl.jpeg"
     },
     {
         "id": 17,
@@ -133,7 +133,7 @@
         "categoria": "Accesorios",
         "precio": 5500,
         "stock": 19,
-        "img": "../imgs/accesorios-charm/corbatero-magnolia.jpeg"
+        "img": "imgs/accesorios-charm/corbatero-magnolia.jpeg"
     },
     {
         "id": 18,
@@ -141,7 +141,7 @@
         "categoria": "Indumentaria",
         "precio": 94300,
         "stock": 10,
-        "img": "../imgs/sweater+camisa negro.jpeg"
+        "img": "imgs/sweater+camisa negro.jpeg"
     },
     {
         "id": 19,
@@ -149,7 +149,7 @@
         "categoria": "Accesorios",
         "precio": 5000,
         "stock": 17,
-        "img": "../imgs/accesorios-charm/corbateros-dije.jpeg"
+        "img": "imgs/accesorios-charm/corbateros-dije.jpeg"
     },
     {
         "id": 20,
@@ -157,7 +157,7 @@
         "categoria": "Indumentaria",
         "precio": 94300,
         "stock": 8,
-        "img": "../imgs/sweaters.jpeg"
+        "img": "imgs/sweaters.jpeg"
     },
     {
         "id": 21,
@@ -165,6 +165,6 @@
         "categoria": "Accesorios",
         "precio": 5500,
         "stock": 21,
-        "img": "../imgs/accesorios-charm/corbatero-corazon.jpeg"
+        "img": "imgs/accesorios-charm/corbatero-corazon.jpeg"
     }
 ]
