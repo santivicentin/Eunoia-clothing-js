@@ -360,4 +360,5 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btnVaciar) {
         btnVaciar.addEventListener('click', vaciarCarritoTotal);
     }
+
 });

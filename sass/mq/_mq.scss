@@ -116,3 +116,37 @@
     grid-template-columns: repeat(2, 1fr); 
 }
 }
+
+@media (max-width: 767.98px) {
+    .contenedor-Cards-index {
+        // Obliga a las tarjetas a estar en una sola fila (flex) y no saltar de línea (nowrap)
+        display: flex;
+        flex-wrap: nowrap;
+        
+        // Habilita el deslizamiento horizontal
+        overflow-x: scroll;
+        
+        // Opcional: Elimina la barra de desplazamiento
+        -ms-overflow-style: none; /* Para IE/Edge */
+        scrollbar-width: none;    /* Para Firefox */
+        &::-webkit-scrollbar {
+            display: none;        /* Para Chrome/Safari/Opera */
+        }
+
+        // Espaciado para que se vea mejor
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        
+        .card-ropa-index {
+            // Define el ancho fijo de la tarjeta para que se vean solo 1 o 2 a la vez
+            min-width: 55%; /* Ocupa el 80% del ancho del móvil */
+            max-width: 55%;
+            
+            // Añade espacio entre las tarjetas
+            margin-right: 0.3rem; 
+            
+            // Opcional: Ayuda a que se detenga bien al deslizar
+            scroll-snap-align: start; 
+        }
+    }
+}

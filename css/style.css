@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .footer-contenido, .contacto-wrapper, .fondo-nosotras .quienes_somos, .nueva-temporada, .index-header-flex {
   display: flex;
   flex-direction: column;
@@ -581,6 +582,26 @@ footer {
 @media (max-width: 576px) {
   #contenedor-productos {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767.98px) {
+  .contenedor-Cards-index {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* Para IE/Edge */
+    scrollbar-width: none; /* Para Firefox */
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+  }
+  .contenedor-Cards-index::-webkit-scrollbar {
+    display: none; /* Para Chrome/Safari/Opera */
+  }
+  .contenedor-Cards-index .card-ropa-index {
+    min-width: 55%; /* Ocupa el 80% del ancho del móvil */
+    max-width: 55%;
+    margin-right: 0.3rem;
+    scroll-snap-align: start;
   }
 }
 
