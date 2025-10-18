@@ -22,22 +22,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.min.css">
 </head>
 
-<script>
-    window.addEventListener('scroll', function () {
-        const header = document.querySelector('.index-header');
-        if (window.scrollY > 50) {
-            header.classList.add('scroll-activo');
-        } else {
-            header.classList.remove('scroll-activo');
-        }
-    });
-</script>
-
 <body>
     <header class="index-header">
     <div class="container d-flex justify-content-between align-items-center py-2">
         
-        <a href="/Eunoia-clothing-js/index.html"> 
+        <a href="./index.html"> 
             <img class="logo" src="./imgs/logo (1).png" alt="logotipo eunoia">
         </a>
 
@@ -61,7 +50,7 @@
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="/Eunoia-clothing-js/index.html">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
                         <li class="nav-item"><a class="nav-link" href="./pages/indumentaria.html">INDUMENTARIA</a></li>
                         <li class="nav-item"><a class="nav-link" href="./pages/accesorios.html">ACCESORIOS</a></li>
                         <li class="nav-item"><a class="nav-link" href="./pages/todo.html">VER TODO</a></li>
@@ -97,34 +86,33 @@
     </footer> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
     <script>
+        // 1. Script del Scroll (Movido del HEAD)
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('.index-header');
+            if (window.scrollY > 50) {
+                header.classList.add('scroll-activo');
+            } else {
+                header.classList.remove('scroll-activo');
+            }
+        });
+
+        // 2. Script del Toggler (SOLO maneja la clase 'open' al hacer clic)
         document.addEventListener("DOMContentLoaded", function () {
             const toggler = document.querySelector(".custom-toggler");
-            const navbarCollapse = document.getElementById("navbarSupportedContent");
-
+            
             toggler.addEventListener("click", function () {
                 toggler.classList.toggle("open");
             });
-            navbarCollapse.addEventListener("hidden.bs.collapse", function () {
-                toggler.classList.remove("open");
-            });
-
-
-            navbarCollapse.addEventListener("shown.bs.collapse", function () {
-                toggler.classList.add("open");
-            });
+            // Se eliminó la lógica de 'hidden.bs.collapse' para evitar conflictos.
         });
     </script>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" ...></script>
-
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.all.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.all.min.js"></script> 
-    
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js"></script> 
 
     <script>
-        // Esta función está redundante con la de main.js, pero la dejamos para que llame la función global
         fetchProductos();
     </script>
 
