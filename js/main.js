@@ -341,20 +341,16 @@ async function finalizarCompra() {
 }
 
 function iniciarTituloDinamico() {
-    // Define los textos que quieres alternar
+
     const titles = ["Eunoia", "Tienda Online"]; 
     let index = 0;
-
-    // Función que cambia el título del documento
     function changeTitle() {
-        // Asigna el título actual del array
+       
         document.title = titles[index];
         
-        // Mueve al siguiente índice (Eunoia -> Tienda Online -> Eunoia)
+        
         index = (index + 1) % titles.length; 
     }
-
-    // Ejecuta la función inmediatamente
     changeTitle();
     setInterval(changeTitle, 3000); 
 }
@@ -364,9 +360,10 @@ function iniciarTituloDinamico() {
 // INICIO DE LA APLICACIÓN
 // =========================================================
 
-fetchProductos();
+
 
 document.addEventListener('DOMContentLoaded', () => {
+    fetchProductos();
     actualizarTotal(); 
     renderizarCarrito();
     iniciarTituloDinamico();
